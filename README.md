@@ -1,11 +1,11 @@
-# Trillbit API Documentation
+# Soundauth API Documentation
 
 ## REST API Endpoints
 
 ### Generate WAV File
 **Endpoint:** `/api/generate-wav`  
 **Method:** POST  
-**Description:** Generates a modulated WAV file from text data using the Trillbit SDK.
+**Description:** Generates a modulated WAV file from text data using the SoundAuth SDK.
 
 **Request Body:**
 ```json
@@ -48,7 +48,7 @@ curl -X POST -H "Content-Type: application/json" \
 ### Connection Establishment
 
 **URL:** `ws://server:port/`  
-**Description:** Establishes a WebSocket connection to the Trillbit server for real-time audio processing.
+**Description:** Establishes a WebSocket connection to the SoundAuth server for real-time audio processing.
 
 **Connection Parameters:**
 - `api_key` (query parameter or auth object): Valid API key for authentication
@@ -70,7 +70,7 @@ curl -X POST -H "Content-Type: application/json" \
 - Success: `status` event with server information
   ```json
   {
-    "message": "Connected to Trillbit Python Server",
+    "message": "Connected to SoundAuth Python Server",
     "sdk_initialized": true,
     "sdk_version": "1.0.0",
     "api_key": "your-api-key",
@@ -116,7 +116,7 @@ socket.emit('stop_recording');
 Server status updates.
 ```json
 {
-  "message": "Connected to Trillbit Python Server",
+  "message": "Connected to SoundAuth Python Server",
   "sdk_initialized": true,
   "sdk_version": "1.0.0"
 }
